@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Joaquín Rougé Núñez</title>
   </head>
   <body>
@@ -18,27 +19,96 @@
           <li class="text">SOBRE MÍ</li>
           <li class="text">TECNOLOGÍAS</li>
           <li class="text">PROYECTOS</li>
-          <li class="text">HABILIDADES BLANDAS</li>
           <li class="text">CONTACTO</li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="me">
+      <section class="intro">
         <div>
           <h4>Hola, soy <span class="span-title">Joaquin Rougé Núñez</span></h4>
           <p class="p-title">
             Backend <br />
             Developer
           </p>
+          <div>
+            <a href="./assets/archives/cv.pdf" class="btn" download="cv.pdf">DESCARGAR CV</a>
+          </div>
         </div>
         <div class="me-image">
           <img src="./assets/images/Joaquin.png" width="400px" alt="" />
         </div>
       </section>
       <section class="about-me bg-white">
-        <h2 class="section-title">SOBRE MI</h2>
-        <p></p>
+        <h2 class="section-title">SOBRE MÍ</h2>
+        <div class="div-abme">
+          <div>
+            <p id="abme-p">Ubicado en la Ciudad Autónoma de Buenos Aires, soy estudiante de la carrera de Analista de Sistemas y un apasionado del desarrollo backend. Gracias a una sólida formación en Java, he profundizado en Spring Boot, consolidando mis habilidades en la creación de aplicaciones robustas y escalables.
+              <br>
+              Actualmente, busco una oportunidad laboral donde pueda aplicar y seguir ampliando mis conocimientos, contribuyendo activamente al crecimiento y éxito del equipo. 
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <h2 class="section-title">TECNOLOGÍAS</h2>
+        <div class="div-skills">
+          <div class="frontend card">
+            <p class="card-title">FRONTEND</p>
+            <div>
+              <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML 5</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS 3</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div class="backend card">
+            <p class="card-title">BACKEND</p>
+            <div>
+              <div class="skill">
+                <i class="fa-brands fa-java"></i>
+                <p>Java</p>
+              </div>
+              <div class="skill">
+                <img src="./assets/images/spring-boot.svg" alt="spring boot logo" class="i">
+                <p>Spring Boot</p>
+              </div>
+              <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p>Spring JPA</p>
+              </div>
+              <div class="skill">
+                <i class="fa-solid fa-box"></i>
+                <p>Microservicios</p>
+              </div>
+            </div>
+          </div>
+          <div class="tools card">
+            <p class="card-title">HERRAMIENTAS</p>
+            <div>
+              <div class="skill">
+                <i class="fa-brands fa-git-alt"></i>
+                <p>Git</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-github"></i>
+                <p>Github</p>
+              </div>
+              <div class="skill">
+                <img src="./assets/images/postman.svg" alt="postman logo" class="i">
+                <p>Postman</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>

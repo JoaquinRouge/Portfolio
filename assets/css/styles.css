@@ -28,6 +28,10 @@ header{
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     color: var(--dark-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 nav{
@@ -75,15 +79,11 @@ ul{
     color: var(--theme-color);
   }
 
-  img{
-
-  }
-
   h4{
     text-transform: uppercase;
   }
 
-  .me{
+  .intro{
     display: flex;
     align-items: center;
     margin-top: 190px;
@@ -95,16 +95,103 @@ ul{
   .p-title{
     font-size: 100px;
     font-weight: 600;
+    margin-bottom: 40px;
   }
 
   .bg-white{
     background-color: white;
   }
 
-  .about-me{
-    text-align: center;
+  .about-me,.skills{
+    padding: 100px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .section-title{
     font-size: 50px;
+  }
+
+  .div-abme{
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .div-abme i{
+    font-size: 400px;
+    color: var(--theme-color);
+  }
+
+  #abme-p{
+    font-size: 25px;
+  }
+
+  .btn {
+    background-color: var(--theme-color); /* Color naranja del fondo */
+    color: white; /* Color blanco del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    font-family: 'Jost',sans-serif;
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    overflow: hidden; /* Evita que la sombra se salga del botón */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+  }
+  
+  .btn:hover {
+    background-color: #e68a00; /* Color naranja más oscuro al pasar el ratón */
+    transform: translateY(-3px); /* Ligero movimiento hacia arriba */
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .div-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+    gap: 5px;
+  }
+
+  .skill i{
+    font-size: 50px;
+  }
+
+  .skill{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid var(--dark-color);
+    padding: 20px;
+  }
+
+  .skills h2{
+    margin-top: 50px;
+  }
+
+  .card{
+    width: 600px;
+    text-align: center;
+  }
+
+  .frontend div,.backend div, .tools div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+    gap: 5px;
+  }
+
+  .i{
+    width: 50px; 
+    margin-left: 37.5px;
+  }
+  
+  .card-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px;
   }
