@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Joaquín Rougé Núñez</title>
   </head>
   <body>
@@ -20,8 +23,8 @@
         <ul>
           <a href="#about-me"><li class="text">SOBRE MÍ</li></a>
           <a href="#skills"><li class="text">TECNOLOGÍAS</li></a>
-          <li class="text">PROYECTOS</li>
-          <li class="text">CONTACTO</li>
+          <a href="#projects"><li class="text">PROYECTOS</li></a>
+          <a href="#contact"><li class="text">CONTACTO</li></a>
         </ul>
       </nav>
     </header>
@@ -34,7 +37,9 @@
             Developer
           </p>
           <div>
-            <a href="./assets/archives/cv.pdf" class="btn" download="cv.pdf">DESCARGAR CV</a>
+            <a href="./assets/archives/cv.pdf" class="btn" download="cv.pdf"
+              >DESCARGAR CV</a
+            >
           </div>
         </div>
         <div class="me-image">
@@ -45,9 +50,16 @@
         <h2 class="section-title">SOBRE MÍ</h2>
         <div class="div-abme">
           <div>
-            <p id="abme-p">Ubicado en la Ciudad Autónoma de Buenos Aires, soy estudiante de la carrera de Analista de Sistemas y un apasionado del desarrollo backend. Gracias a una sólida formación en Java, he profundizado en Spring Boot, consolidando mis habilidades en la creación de aplicaciones robustas y escalables.
-              <br>
-              Actualmente, busco una oportunidad laboral donde pueda aplicar y seguir ampliando mis conocimientos, contribuyendo activamente al crecimiento y éxito del equipo. 
+            <p id="abme-p">
+              Ubicado en la Ciudad Autónoma de Buenos Aires, soy estudiante de
+              la carrera de Analista de Sistemas y un apasionado del desarrollo
+              backend. Gracias a una sólida formación en Java, he profundizado
+              en Spring Boot, consolidando mis habilidades en la creación de
+              aplicaciones robustas y escalables.
+              <br />
+              Actualmente, busco una oportunidad laboral donde pueda aplicar y
+              seguir ampliando mis conocimientos, contribuyendo activamente al
+              crecimiento y éxito del equipo.
             </p>
           </div>
         </div>
@@ -80,7 +92,11 @@
                 <p>Java</p>
               </div>
               <div class="skill">
-                <img src="./assets/images/spring-boot.svg" alt="spring boot logo" class="i">
+                <img
+                  src="./assets/images/spring-boot.svg"
+                  alt="spring boot logo"
+                  class="i"
+                />
                 <p>Spring Boot</p>
               </div>
               <div class="skill">
@@ -105,14 +121,66 @@
                 <p>Github</p>
               </div>
               <div class="skill">
-                <img src="./assets/images/postman.svg" alt="postman logo" class="i">
+                <img
+                  src="./assets/images/postman.svg"
+                  alt="postman logo"
+                  class="i"
+                />
                 <p>Postman</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="projects" id="projects">
+        <h2 class="section-title">ÚLTIMOS PROYECTOS</h2>
+        <div class="projects-div">
+          <div class="carousel-div">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img src="./assets/images/login.jpg" alt="Imagen 1" />
+                <img src="./assets/images/panel.jpg" alt="Imagen 2" />
+                <img src="./assets/images/admin.jpg" alt="Imagen 3" />
+              </div>
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+            </div>
+          </div>
+          <div>
+            <h4>Sistema de citas médicas</h4>
+            <p class="project">
+              Este proyecto backend, desarrollado con Spring Boot, permite
+              gestionar usuarios y turnos. Implementa un sistema CRUD completo
+              para cada entidad y maneja la persistencia de datos con JPA e
+              Hibernate, utilizando MySQL como base de datos. Además, incorpora
+              un sistema de encriptación de contraseñas con BCrypt para
+              garantizar la seguridad de los usuarios. El proyecto cuenta con
+              una interfaz frontend integrada para visualizar de manera más
+              cómoda los apartados de la API.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <p>joarouge@gmail.com</p>
+        </div>
+        <div class="media">
+          <a
+            href="https://www.linkedin.com/in/joaquin-rouge-nu%C3%B1ez-955b69173/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/JoaquinRouge" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>Desarrollado por Joaquín Rougé Núñez</p>
+    </footer>
   </body>
   <script src="./assets/js/script.js"></script>
 </html>
